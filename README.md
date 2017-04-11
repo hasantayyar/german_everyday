@@ -5,3 +5,7 @@ Everyday I will add a new sentence in German (and it's translation in English), 
 
 You can follow via [rss](#) or simple check this repo.
 
+### Links
+- linguee.de
+- dict.cc
+- duden.de
