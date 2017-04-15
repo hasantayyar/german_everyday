@@ -6,6 +6,6 @@ Everyday I will add a new sentence in German (and it's translation in English), 
 You can follow via [rss](#) or simple check this repo.
 
 ### Links
-- linguee.de
-- dict.cc
-- duden.de
+- [linguee.de](http://linguee.de)
+- [dict.cc](http://dict.cc)
+- [duden.de](http://duden.de)
