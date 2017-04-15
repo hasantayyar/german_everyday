@@ -1,7 +1,7 @@
 ## New Words for April
 
 - [glücklich](http://www.dict.cc/?s=gl%C3%BCcklich) : happy {adj}, fortunate {adj}, lucky {adj} [fortunate]
-  - The breakfast makes me happy. / **Das Frühstück macht mich glücklich.**
+  - **Das Frühstück macht mich glücklich.** : The breakfast makes me happy.
 - [probieren](http://www.dict.cc/?s=probieren) : to try
   - ...
 - [schwierig](http://www.dict.cc/?s=schwierig) : difficult
@@ -13,4 +13,9 @@
 - [trinken](http://www.linguee.de/deutsch-englisch/uebersetzung/trinken.html) : to drink {verb}
   - ...
 - [schreiben/Schreiben](http://www.linguee.de/deutsch-englisch/search?source=auto&query=schreiben) :  to write {verb}, letter {noun}
+  - ...
+- [essen/Essen](http://www.linguee.de/deutsch-englisch/search?source=auto&query=essen) : to eat {verb}, food/meal {noun}
+  - **Ich esse Banane** : I eat banana.
+  - **Ich esse jeden Morgen Banane** : I eat banana every morning. 
+- [trinken](http://www.linguee.de/deutsch-englisch/search?source=auto&query=trinken) : to drink {verb}
   - ...
