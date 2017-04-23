@@ -26,7 +26,7 @@ const init = () => {
   loadJSON( "/words.json", response => {
     console.log('data fetched');
     let data = JSON.parse(response);
-    $('body').append(render(tpl, data[0]))
+    document.body.innerHTML += render(tpl, data[0]);
   });
 }
 
