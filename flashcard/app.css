@@ -26,6 +26,29 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
+#nav_sections{
+  width:300px;
+  text-align: center;
+  margin:10px auto;
+}
+#nav_sections a{
+  text-decoration:none;
+  padding:6px;
+  margin:4px;
+  background-color: #121212;
+  font-size:12px;
+  color:#fff;
+  font-face: 'Slabo 27px';
+}
+#container{
+  margin: 0px auto 120px auto;
+  border: 1px rgba(255, 255, 255, 0.03) solid;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 400px;
+}
 article#flashcard {
   margin: 0px auto 120px auto;
   border: 1px rgba(255, 255, 255, 0.03) solid;
