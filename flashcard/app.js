@@ -4,7 +4,7 @@ var months = ['April', 'May'];
 
 for (var mi in months) {
   var m = months[mi];
-  document.getElementById('nav_sections').innerHTML += '<a onclick="loadSection(\'' + m + '/words.json\')" href="#">' + m + '</a>';
+  document.getElementById('nav_sections').innerHTML += '<a onclick="loadSection(\'../' + m + '/words.json\')" href="#">' + m + '</a>';
 }
 
 var loadJSON = function(file, callback) {
@@ -66,5 +66,5 @@ var render = function(options) {
 }
 var init = function(file) {
   console.log('Init app');
-  loadSection('April/words.json');
+  loadSection('../April/words.json');
 }
