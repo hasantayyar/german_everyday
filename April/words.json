@@ -57,5 +57,9 @@
 		"word": "erfahren",
 		"link": "http://www.dict.cc/?s=erfahren",
 		"description": "to experience {verb}, to learn {verb}"
+	}, {
+		"word" : "danach",
+		"link": "http://www.dict.cc/?s=danach",
+		"description": "afterwards {adv}, after then {adj}"
 	}
 ]
