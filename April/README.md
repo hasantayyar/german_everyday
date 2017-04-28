@@ -26,3 +26,4 @@
   - ...
 - [erfahren](http://www.dict.cc/?s=erfahren) : to experience {verb}, to learn {verb}
 - [danach](http://www.dict.cc/?s=danach) : afterwards {adv}, after then {adj}
+- [etwas](http://www.dict.cc/?s=etwas) : something {pron}
