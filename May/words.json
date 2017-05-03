@@ -4,5 +4,10 @@
 		"word": "Blatt",
 		"link": "http://www.dict.cc/?s=Blatt",
 		"description": "sheet {noun}, page {noun}, leaf {noun}"
+	},
+	{
+		"word": "abwesend",
+		"link": "",
+		"description": "absent {adj}, away {adv}"
 	}
 ]
