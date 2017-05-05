@@ -9,5 +9,9 @@
 		"word": "abwesend",
 		"link": "",
 		"description": "absent {adj}, away {adv}"
-	}
+	},
+    {
+        "word": "Benutzer",
+        "description": "user {noun}, reader {noun}"
+    }
 ]
