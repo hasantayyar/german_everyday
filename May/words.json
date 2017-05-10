@@ -10,6 +10,10 @@
 		"link": "",
 		"description": "absent {adj}, away {adv}"
 	},
+	{
+		"word": "forschen",
+		"description": "to search {verb}"
+	},
     {
         "word": "Benutzer",
         "description": "user {noun}, reader {noun}"
