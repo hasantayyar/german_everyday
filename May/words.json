@@ -4,21 +4,17 @@
 		"word": "Blatt",
 		"link": "http://www.dict.cc/?s=Blatt",
 		"description": "sheet {noun}, page {noun}, leaf {noun}"
-	},
-	{
+	}, {
 		"word": "abwesend",
 		"link": "",
 		"description": "absent {adj}, away {adv}"
-	},
-	{
+	}, {
 		"word": "forschen",
 		"description": "to search {verb}"
-	},
-	{
+	}, {
 		"word": "Geld",
 		"description": "money {noun}"
-	},
-	{
+	}, {
 		"word": "Benutzer",
 		"description": "user {noun}, reader {noun}"
 	}

@@ -1,6 +1,6 @@
 var index = 0;
 var words = [];
-var months = ['April', 'May'];
+var months = ['April', 'May', 'June'];
 
 for (var mi in months) {
   var m = months[mi];
