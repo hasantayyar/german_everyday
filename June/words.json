@@ -1,4 +1,10 @@
 [{
 	"word": "stehen",
 	"description": "to stand {verb}"
-}]
+},
+{
+    "word": "verstehen",
+    "description": "to understand {verb}"
+}
+
+]
