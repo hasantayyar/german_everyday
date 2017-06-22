@@ -5,6 +5,10 @@
 {
     "word": "verstehen",
     "description": "to understand {verb}"
-}
+},
+ {
+ 	"word": "Geschäft",
+	 "description": "business {noun}"
+ }
 
 ]
