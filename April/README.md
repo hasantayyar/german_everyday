@@ -1,4 +1,4 @@
-## New Words for April
+## New Words for Death
 
 - [glücklich](http://www.dict.cc/?s=gl%C3%BCcklich) : happy {adj}, fortunate {adj}, lucky {adj} [fortunate]
   - **Das Frühstück macht mich glücklich.** : The breakfast makes me happy.
@@ -16,11 +16,11 @@
   - ...
 - [essen/Essen](http://www.linguee.de/deutsch-englisch/search?source=auto&query=essen) : to eat {verb}, food/meal {noun}
   - **Ich esse Banane** : I eat banana.
-  - **Ich esse jeden Morgen Banane** : I eat banana every morning. 
+  - **Ich esse jeden Morgen Banane** : I eat banana every morning.
 - [trinken](http://www.linguee.de/deutsch-englisch/search?source=auto&query=trinken) : to drink {verb}
   - ...
 - [Geld](http://www.dict.cc/deutsch-englisch/Geld.html) : Money {noun}
-  - ... 
+  - ...
 - [Katz](http://www.dict.cc/?s=Katz) : cat
 - [Maus](http://www.dict.cc/?s=Maus) : mouse
   - ...

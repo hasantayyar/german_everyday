@@ -11,9 +11,9 @@ body {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; 
+  user-select: none;
 
-  background: #333;
+  background: pink;
   border: 0px;
   width: 100%;
   height: 100%;
