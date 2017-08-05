@@ -100,6 +100,18 @@
         "description": "Special"
     },
     {
+    	"word": "stehen",
+    	"description": "to stand {verb}"
+    },
+    {
+        "word": "verstehen",
+        "description": "to understand {verb}"
+    },
+     {
+     	"word": "Geschäft",
+    	 "description": "business {noun}"
+     },
+    {
         "word": "Einfluss",
         "description": "Influence"
     },
