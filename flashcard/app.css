@@ -46,8 +46,7 @@ body {
 }
 #container{
   margin: 0px auto 120px auto;
-  border: 1px rgba(255, 255, 255, 0.03) solid;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 25px rgba(0,0,0,.04);
   width: 100%;
   max-width: 600px;
   height: 100%;
@@ -55,8 +54,7 @@ body {
 }
 article#flashcard {
   margin: 0px auto 120px auto;
-  border: 1px rgba(255, 255, 255, 0.03) solid;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow:  0px 0px 25px rgba(0,0,0,.04);
   width: 100%;
   max-width: 600px;
   height: 100%;
@@ -88,16 +86,14 @@ article#flashcard section {
 }
 article#flashcard section.front {
   cursor: pointer;
-
-  color: #921224;
+  color: #000000;
   background: #FFF;
   height: 100%;
 }
 article#flashcard section.back {
   cursor: pointer;
-
-  color: #BDC6B8;
-  background: #921224;
+  color: #FFF;
+  background: #0dd7a5;
   height: 0%;
 }
 
