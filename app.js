@@ -66,5 +66,5 @@ var render = function(options) {
 }
 var init = function(file) {
   console.log('Init app');
-  loadSection('../April/words.json');
+  loadSection('../German/words.json');
 }
