@@ -25,13 +25,31 @@ var loadSection = function(file) {
   document.getElementById('container').innerHTML = '';
   loadJSON(file, function(response) {
     console.log('data fetched', file);
-    var data = JSON.parse(response);
+    var data = shuffle(JSON.parse(response));
     for (var i in data) {
       words.push(render(data[i]));
     }
     document.getElementById('container').innerHTML += words[0];
   });
 };
+
+// array shuffle utility function
+// https://github.com/coolaj86/knuth-shuffle
+var shuffle function(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  return array;
+}
+
 
 var refresh = function() {
   document.getElementById('flashcard').remove();
