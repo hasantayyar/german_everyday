@@ -35,7 +35,7 @@ var loadSection = function(file) {
 
 // array shuffle utility function
 // https://github.com/coolaj86/knuth-shuffle
-var shuffle function(array) {
+var shuffle = function(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {
