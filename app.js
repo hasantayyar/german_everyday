@@ -1,6 +1,6 @@
 var index = 0;
 var words = [];
-var months = ['German', 'English'];
+var months = ['German', 'Turkish', 'English'];
 
 for (var mi in months) {
   var m = months[mi];
@@ -26,12 +26,30 @@ var loadSection = function(file) {
   loadJSON(file, function(response) {
     console.log('data fetched', file);
     var data = JSON.parse(response);
+    // var data = shuffle(JSON.parse(response));
     for (var i in data) {
       words.push(render(data[i]));
     }
     document.getElementById('container').innerHTML += words[0];
   });
 };
+
+// // array shuffle utility function
+//  // https://github.com/coolaj86/knuth-shuffle
+//  var shuffle function(array) {
+//   var currentIndex = array.length, temporaryValue, randomIndex;
+//   // While there remain elements to shuffle...
+//   while (0 !== currentIndex) {
+//     // Pick a remaining element...
+//     randomIndex = Math.floor(Math.random() * currentIndex);
+//     currentIndex -= 1;
+//     // And swap it with the current element.
+//     temporaryValue = array[currentIndex];
+//     array[currentIndex] = array[randomIndex];
+//      array[randomIndex] = temporaryValue;
+//    }
+//    return array;
+//  }
 
 var refresh = function() {
   document.getElementById('flashcard').remove();
@@ -53,9 +71,10 @@ var tpl = '<article id="flashcard">';
 tpl += '<input id="flashcard-1" type="checkbox" />';
 tpl += '<label for="flashcard-1">';
 tpl += '<section class="front">{{word}}</section>';
+tpl += '<horse class="front">{{pronounciation}}</horse>';
 tpl += '<section class="back">{{description}}</section>';
 tpl += '</label>';
-tpl += '<div class="nav"><a onclick="prev()">&#x2039; prev</a><a onclick="next()">next &#x203A;</a></div>'
+tpl += '<div class="nav"><a id="previous" onclick="prev()">&#x2039; prev</a><a id="next" onclick="next()">next &#x203A;</a></div>'
 tpl += '</article>';
 
 var render = function(options) {
