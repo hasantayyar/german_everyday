@@ -19,3 +19,12 @@ $(document).keydown(function(e){
        $('#flashcard-1').click();
     }
 });
+
+// // Random Switch
+//
+// if ($('input.checkbox_check').is(':checked')) {
+//   var random = true;
+//   else if {
+//     var random = false;
+//   }
+// });

@@ -2,7 +2,7 @@ var index = 0;
 var words = [];
 var months = ['German', 'Turkish', 'English'];
 
-var random = true;
+var random = false;
 
 for (var mi in months) {
   var m = months[mi];
