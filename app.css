@@ -6,6 +6,17 @@
   box-sizing: border-box;
 
 }
+a.German{
+
+}
+
+a.German.active{
+
+}
+#nav_sections a.active{
+  color: red!important;
+}
+
 html,
 body {
   -webkit-touch-callout: none;
