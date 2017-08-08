@@ -81,9 +81,9 @@ var prev = function() {
 var tpl = '<article id="flashcard">';
 tpl += '<input id="flashcard-1" type="checkbox" />';
 tpl += '<label for="flashcard-1">';
-tpl += '<section class="front">{{word}}';
-tpl += '<detail class="front">{{pronounciation}}</detail></section>';
-tpl += '<section class="back">{{description}}</section>';
+tpl += '<section class="front"><div class="card-contents"><h2>{{word}}</h2>';
+tpl += '<h4 class="front">{{pronounciation}}</h4></div></section>';
+tpl += '<section class="back"><div class="card-contents"><h2>{{description}}</section></h2></div>';
 tpl += '</label>';
 tpl += '<div class="nav"><a id="previous" onclick="prev()">&#x2039; prev</a><a id="next" onclick="next()">next &#x203A;</a></div>'
 tpl += '</article>';

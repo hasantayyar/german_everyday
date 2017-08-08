@@ -7,12 +7,25 @@
 
 }
 
+section.front,
+section.back {
+display: flex !important;
+align-items: center;
+justify-content: center;
+}
+
 .nav {
   margin-top: 15px;
   text-align: center;
 }
 
-detail.front {
+/* --- Typogrphy --- */
+
+h2 {
+    font-size: 56px;
+}
+
+h4.front {
     color: lightgray;
     font-size: 25px;
     display: block;
@@ -92,8 +105,8 @@ article#flashcard label {
   height: 100%;
 }
 article#flashcard section {
-  display: block;
-  font-size: 56px;
+  /*display: block;*/
+  /*font-size: 56px;*/
   text-align: center;
   /*line-height: 400px;*/
   line-height: 60px;
