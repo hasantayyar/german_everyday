@@ -5,4 +5,8 @@
 - [brauchbar](http://dict.cc/?s=brauchbar): useful {adj}
 - [wichtig](http://dict.cc/?s=wichtig): important {adj}
 - [herausfordern](http://dict.cc/?s=herausfordern): to chanllenge {verb}
-  - [Die Herausforderung](http://dict.cc/?s=Herausforderung): chanllenge {noun}
+  - [die Herausforderung](http://dict.cc/?s=Herausforderung): chanllenge {noun}
+- [der Absatz](http://dict.cc/?s=Absatz): paragraph {noun}
+- [manchmal](http://dict.cc/?manchmal): sometimes {adj}
+- [danach](http://dict.cc/?danach): afterwards {adv}
+- [der Mund](http://dict.cc/?mund): mouth {noun}
