@@ -6,15 +6,20 @@
   box-sizing: border-box;
 
 }
-a.German{
 
+.nav {
+  margin-top: 15px;
+  text-align: center;
 }
 
-a.German.active{
-
+detail.front {
+    color: lightgray;
+    font-size: 25px;
+    display: block;
 }
+
 #nav_sections a.active{
-  color: red!important;
+  background-color: #0dd7a5!important;
 }
 
 html,
@@ -44,13 +49,14 @@ body {
 #nav_sections{
   width:300px;
   text-align: center;
-  margin:10px auto;
+  margin:20px auto;
 }
 #nav_sections a{
   text-decoration:none;
-  padding:6px;
-  margin:4px;
-  background-color: #121212;
+  padding:12px;
+  margin:8px;
+  background-color: lightgrey;
+  border-radius: 6px;
   font-size:12px;
   color:#fff;
   font-family: 'Varela Round', sans-serif;
@@ -59,7 +65,7 @@ body {
   margin: 0px auto 120px auto;
   box-shadow: 0px 0px 25px rgba(0,0,0,.04);
   width: 100%;
-  max-width: 600px;
+  max-width: 550px;
   height: 100%;
   max-height: 400px;
 }
@@ -89,7 +95,8 @@ article#flashcard section {
   display: block;
   font-size: 56px;
   text-align: center;
-  line-height: 400px;
+  /*line-height: 400px;*/
+  line-height: 60px;
   width: 100%;
   -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
@@ -117,18 +124,24 @@ article#flashcard section.back {
 article#flashcard div.nav{
   display:block;
   background-color: transparent;
-  padding: 10px;
+  padding-top: 10px;
   height:40px;
 }
 article#flashcard div.nav a {
   cursor: pointer;
   color: #FFF;
   background: #02a1e4;
-  padding: 15px 60px;
+  padding: 15px 113px;
   border-radius: 8px;
   margin-right:10px;
 }
 
 article#flashcard div.nav a:hover {
   background: pink;
+}
+
+ /*-----------------new--------------*/
+
+section.front {
+    overflow: inherit;
 }

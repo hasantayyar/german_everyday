@@ -1,5 +1,3 @@
-alert('jerry is Merlin reincarnated')
-
 $(document).keydown(function(e){
     e.preventDefault();    //this may not be necessary
 

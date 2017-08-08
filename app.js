@@ -43,6 +43,8 @@ var loadSection = function(lang) {
   });
 };
 
+
+
 // array shuffle utility function
  // https://github.com/coolaj86/knuth-shuffle
  var shuffle = function(array) {
@@ -80,7 +82,7 @@ var tpl = '<article id="flashcard">';
 tpl += '<input id="flashcard-1" type="checkbox" />';
 tpl += '<label for="flashcard-1">';
 tpl += '<section class="front">{{word}}';
-tpl += '<horse class="front">{{pronounciation}}</horse></section>';
+tpl += '<detail class="front">{{pronounciation}}</detail></section>';
 tpl += '<section class="back">{{description}}</section>';
 tpl += '</label>';
 tpl += '<div class="nav"><a id="previous" onclick="prev()">&#x2039; prev</a><a id="next" onclick="next()">next &#x203A;</a></div>'
