@@ -21,46 +21,36 @@ Vue.component('word-item', {
 
 var app = new Vue({
   el: '#container',
+  data: {
+    index: 0,
+    words:
+      [ ]
+  },
   methods: {
     next: function() { 
       if (this.index >= this.words.lenght ) {
         return;
       }
-      this.$set(this.words[this.index], 'show', false );
-      this.index++;
-      this.rearrange();
+      this.nav(true);
     },
     prev: function() { 
       if (this.index <= 0) {
         return;
       }
-      this.$set(this.words[this.index], 'show', false );
-      this.index--;
-      this.rearrange();
+      this.nav(false);
     },
-    rearrange: function(){
+    nav: function(n){
+      this.$set(this.words[this.index], 'show', false );
+      this.index = n ? this.index + 1 : this.index - 1;
       console.log(this.index);
       this.$set(this.words[this.index], 'show', true );
     }
-  },
-  data: {
-    index: 0,
-    words:
-      [ ]
   }
 });
-
-
 
 for (var mi in months) {
   var m = months[mi];
   document.getElementById('nav_sections').innerHTML += '<a class="' + m + '" onclick="loadSection(\'' + m + '\')" href="#">' + m + '</a>';
-}
-
-
-var loadJSON = function(file, callback) {
-  console.log('Getting data...');
-  $.getJSON(file, callback);
 }
 
 var loadSection = function(lang) {
@@ -72,7 +62,7 @@ var loadSection = function(lang) {
   app.index = 0;
   let random = $('input[name=random]').is(':checked');
 
-  loadJSON(file, function(data) {
+  $.getJSON(file, function(data) {
     console.log('data fetched', file);
     var count = data.length;
     $('#display .total').html(count)
