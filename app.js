@@ -1,100 +1,89 @@
-var index = 0;
-var words = [];
+var shuffle=function(r){for(var a,f,n=r.length;0!==n;)f=Math.floor(Math.random()*n),a=r[n-=1],r[n]=r[f],r[f]=a;return r};
 var months = ['German', 'Turkish', 'English'];
 
-var random = false;
+Vue.component('word-item', {
+  props: ['word'],
+  template: '<span><input id="flashcard-1" type="checkbox" />\
+      <label for="flashcard-1">\
+      <section class="front">\
+        <div class="card-contents">\
+          <h2>{{word.word}}</h2>\
+          <h4 class="front">{{word.pronounciation}}</h4>\
+        </div>\
+      </section>\
+      <section class="back">\
+        <div class="card-contents">\
+          <h2>{{word.description}}</h2>\
+        </div>\
+      </section>\
+      </label></span>'
+});
+
+var app = new Vue({
+  el: '#container',
+  methods: {
+    next: function() { 
+      if (this.index >= this.words.lenght ) {
+        return;
+      }
+      this.$set(this.words[this.index], 'show', false );
+      this.index++;
+      this.rearrange();
+    },
+    prev: function() { 
+      if (this.index <= 0) {
+        return;
+      }
+      this.$set(this.words[this.index], 'show', false );
+      this.index--;
+      this.rearrange();
+    },
+    rearrange: function(){
+      console.log(this.index);
+      this.$set(this.words[this.index], 'show', true );
+    }
+  },
+  data: {
+    index: 0,
+    words:
+      [ ]
+  }
+});
+
+
 
 for (var mi in months) {
   var m = months[mi];
   document.getElementById('nav_sections').innerHTML += '<a class="' + m + '" onclick="loadSection(\'' + m + '\')" href="#">' + m + '</a>';
 }
 
+
 var loadJSON = function(file, callback) {
-  var xobj = new XMLHttpRequest();
-  xobj.overrideMimeType("application/json");
-  xobj.open('GET', file, true);
   console.log('Getting data...');
-  xobj.onreadystatechange = () => {
-    if (xobj.readyState === 4 && xobj.status === 200) {
-      callback(xobj.responseText);
-    }
-  };
-  xobj.send(null);
+  $.getJSON(file, callback);
 }
 
 var loadSection = function(lang) {
   var file = "../" + lang + "/words.json";
   $('#nav_sections a').removeClass('active');
   $('#nav_sections a.' + lang +'').addClass('active');
-  words = [];
-  document.getElementById('container').innerHTML = '';
-  loadJSON(file, function(response) {
-    console.log('data fetched', file);
-    var data = JSON.parse(response);
-    var data = random ? shuffle(JSON.parse(response)) : JSON.parse(response);
 
+  app.words = [];
+  app.index = 0;
+  let random = $('input[name=random]').is(':checked');
+
+  loadJSON(file, function(data) {
+    console.log('data fetched', file);
     var count = data.length;
     $('#display .total').html(count)
-    $('#display .index').html(0)
-    for (var i in data) {
-      words.push(render(data[i]));
-    }
-    document.getElementById('container').innerHTML += words[0];
+    $('#display .index').html(0);
+    let shuffled = random ? shuffle(data) : data;
+    shuffled[0].show = true;
+    app.words.push(...shuffled)
   });
 };
 
-
-
-// array shuffle utility function
- // https://github.com/coolaj86/knuth-shuffle
- var shuffle = function(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-     array[randomIndex] = temporaryValue;
-   }
-   return array;
- }
-
-var refresh = function() {
-  document.getElementById('flashcard').remove();
-  document.getElementById('container').innerHTML += words[index];
-}
-
-var next = function() {
-  if (index === (words.length - 1)) return;
-  index++;
-  refresh();
-}
-var prev = function() {
-  if (index === 0) return;
-  index--;
-  refresh();
-}
-
-var tpl = '<article id="flashcard">';
-tpl += '<input id="flashcard-1" type="checkbox" />';
-tpl += '<label for="flashcard-1">';
-tpl += '<section class="front"><div class="card-contents"><h2>{{word}}</h2>';
-tpl += '<h4 class="front">{{pronounciation}}</h4></div></section>';
-tpl += '<section class="back"><div class="card-contents"><h2>{{description}}</section></h2></div>';
-tpl += '</label>';
-tpl += '<div class="nav"><a id="previous" onclick="prev()">&#x2039; prev</a><a id="next" onclick="next()">next &#x203A;</a></div>'
-tpl += '</article>';
-
-var render = function(options) {
-  return tpl.replace(
-    /(\{\{)(.*?)(\}\})/g,
-    (match, _1, _2, _3) => options[_2]
-  );
-}
-var init = function(file) {
+var init = function(lang) {
   console.log('Init app');
-  loadSection('German');
+  loadSection(lang);
 }

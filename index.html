@@ -11,6 +11,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="msapplication-starturl" content="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://unpkg.com/vue"></script>
+
 <head>
 <!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/hasantayyar/german_everyday/master/flashcard/app.css"> -->
 <link rel="stylesheet" type="text/css" href="app.css">
@@ -18,14 +20,27 @@
 
 </head>
 <body>
-  <!-- Rectangular switch -->
+    <!-- Rectangular switch -->
 
     <div id="nav_sections"></div>
-    <div id="container"></div>
+    <div id="container">
+        <article id="flashcard">
+        <word-item
+          v-for="word in words" v-if="word.show"
+          v-bind:word="word"
+          v-bind:key="word.word">
+        </word-item>
+        <div class="nav">
+        <a id="previous" v-on:click="prev()">&#x2039; prev</a>
+        <a id="next" v-on:click="next">next &#x203A;</a>
+      </div>
+    </article>
+
+    </div>
     <div id='display'><span class='total'></span></div>
 
     <label class="checkbox_check">
-      Randon <input type="checkbox">
+      Random <input type="checkbox" name="random">
       <span class="slider"></span>
     </label>
 
@@ -33,7 +48,7 @@
   src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
 <script type="text/javascript">
-  init('words.json?v3');
+  init('German');
 </script>
 <script type="text/javascript" src="jerry.js"></script>
 </body>
