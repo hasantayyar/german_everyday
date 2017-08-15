@@ -10,3 +10,14 @@
 - [manchmal](http://dict.cc/?manchmal): sometimes {adj}
 - [danach](http://dict.cc/?danach): afterwards {adv}
 - [der Mund](http://dict.cc/?mund): mouth {noun}
+- fehlt: is absent
+- gefallen <-> mögen : to like 
+- müde: tired
+- holen
+  - abholen:
+  - uberholen:
+  - abholen:
+  - wieterholen: 
+  - enholen:
+- gefährlich: dangerous 
+- berichten: to report
