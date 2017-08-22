@@ -21,3 +21,4 @@
   - enholen:
 - gefährlich: dangerous 
 - berichten: to report
+- erfinden : to make smth up
